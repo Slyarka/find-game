@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style>
+		.background{
+			background-image: url(map.png);
+			height: 1000px;
+			background-size: 100% 100%;
+		}
+		.state1{
+			position: absolute;
+        	top: 270px;
+        	left: 280px;
+        	width: 30px;
+        	height: 30px;
+
+		}
+		.state2{
+			position: absolute;
+        	top: 780px;
+        	left: 800px;
+        	width: 30px;
+        	height: 30px;
+
+        }
+        .state3{
+			position: absolute;
+        	top: 740px;
+        	left: 1285px;
+        	width: 30px;
+        	height: 30px;
+
+        }
+        .state4{
+			position: absolute;
+        	top: 330px;
+        	left: 1330px;
+        	width: 30px;
+        	height: 30px;
+
+        }
+        .text{
+			position: absolute;
+			top: 200px; 
+			left: 800px
+		}
+	</style>
+</head>
+<body>
+	<div class="background">
+		<h1 class="text" style="top: 350px; left: 950px;">Найдено: <span class="score"></span> из 4</h1>
+		<div class="state1"></div>
+		<div class="state2"></div>
+		<div class="state3"></div>
+		<div class="state4"></div>
+	</div>
+
+<script type="text/javascript">
+		let number = 0;
+		document.querySelector(".score").innerHTML = number
+		document.querySelector(".state1").onclick = function(){
+			number = number + 1
+			document.querySelector(".score").innerHTML = number
+			document.querySelector(".state1").style.display = ("none")
+   		}
+   		document.querySelector(".state2").onclick = function(){
+			number = number + 1
+			document.querySelector(".score").innerHTML = number
+			document.querySelector(".state2").style.display = ("none")
+   		}
+   		document.querySelector(".state3").onclick = function(){
+			number = number + 1
+			document.querySelector(".score").innerHTML = number
+			document.querySelector(".state3").style.display = ("none")
+   		}
+   		document.querySelector(".state4").onclick = function(){
+			number = number + 1
+			document.querySelector(".score").innerHTML = number
+			document.querySelector(".state4").style.display = ("none")
+   		}
+
+	</script>
+</body>
+</html>
